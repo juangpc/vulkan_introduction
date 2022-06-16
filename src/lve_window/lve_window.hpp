@@ -18,7 +18,7 @@ private:
     const int width;
     const int height;
     std::string windowName;
-    GLFWindow *window;
+    GLFWwindow *window;
 };
 
 }

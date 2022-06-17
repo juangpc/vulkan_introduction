@@ -13,6 +13,7 @@ class LveWindow
 public: 
     LveWindow(int w, int h, std::string name);
     ~LveWindow();
+    bool shouldClose();
 private:
     void initWindow();
     const int width;

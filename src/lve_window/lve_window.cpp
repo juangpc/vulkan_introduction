@@ -2,11 +2,13 @@
 
 #include "lve_window.hpp"
 
+#include <utility>
+
 namespace lve {
 
 
-LveWindow::LveWindow(int w, int h, std::string name)
-: width{w}, height{h}, windowName{name} 
+LveWindow::LveWindow(int w, int h, std::string  name)
+: width{w}, height{h}, windowName{name}, window{nullptr}
 {
     initWindow();
 }
@@ -27,5 +29,9 @@ void LveWindow::initWindow()
 
 }
 
+bool LveWindow::shouldClose()
+{
+    return glfwWindowShouldClose(window);
+}
 
 }

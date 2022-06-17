@@ -12,13 +12,10 @@ void FirstApp::run()
 {
     std::cout << "I'm running!!\n";
 
-    while(lveWindow.shouldClose())
+    while(!lveWindow.shouldClose())
     {
         glfwPollEvents();
     }
-
-
-
 }
 
 

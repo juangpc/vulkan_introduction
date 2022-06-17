@@ -1,4 +1,5 @@
 set (sources
+    main.cpp
     first_app.cpp
     lve_window.cpp
 )

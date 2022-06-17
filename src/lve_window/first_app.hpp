@@ -4,18 +4,24 @@
 #include <iostream>
 #include <stdexcept>
 
+#include "lve_window.hpp"
+
 namespace lve {
 
 class FirstApp 
 {
-    public:
-    static constexpr int WIDTH = 800;
-    static constexpr int HEIGHT = 600;
+public:
+    FirstApp();
 
-    void run() 
-    {
+    FirstApp(const int width);
 
-    }
+    const int WIDTH;
+    const int HEIGHT;
+
+    void run();
+
+private: 
+    LveWindow lveWindow;
     
 };
 
